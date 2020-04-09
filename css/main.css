@@ -100,6 +100,9 @@ body a{
     position: relative;
     padding-bottom: 10px;
 }
+.menu.foot > li{
+    padding: 0px;
+}
 .menu li a{
     display: block;
     font-size: 16px;
@@ -226,7 +229,8 @@ body a{
 .info2 .section_info button,
 .info3 .section_info button,
 .enviar_contacto,
-.info4 button{
+.info4 button,
+.pie_pagina .cuerpo .news button{
     padding: 18px 25px;
     font-size: 16px;
     background: none;
@@ -486,6 +490,7 @@ body a{
     margin-bottom: 40px;
 }
 .info5 img{
+    width: 500px;
     border-radius: 5px;
     box-shadow: 2px 8px 10px rgba(0,0,0,.35);
     cursor: pointer;
@@ -495,8 +500,65 @@ body a{
     transform: rotateY(180deg);
 }
 .pie_pagina{
-    height: 400px;
+    /* height: 400px; */
+    overflow: hidden;
     background: #333333;
+    color: #cccccc;
+}
+.pie_pagina .cuerpo{
+    text-align: center;
+    padding: 20px;
+}
+.pie_pagina .cuerpo .news{
+    padding: 20px 0px;
+}
+.pie_pagina .cuerpo .news .input_group{
+    margin-bottom: 15px;
+    position: relative;
+    width: 40%;
+    min-width: 280px;
+    margin: auto;
+}
+.pie_pagina .cuerpo .news .input_group i{
+    position: absolute;
+    left: 17px;
+    top: calc(50% - 21px);
+    font-size: 42px;
+}
+.pie_pagina .cuerpo .news button{
+    padding: 10px;
+    font-size: 20px;
+    color: #eeeeee;
+    background: #0c8044;
+    border: 1px solid #0c8044;
+    padding: 20px 30px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,.08);
+}
+.pie_pagina .cuerpo .news button:hover{
+    background: #08723b;
+    border: 1px solid #08723b;
+}
+.pie_pagina .cuerpo .news .input_group input{
+    width: 100%;
+    min-width: 280px;
+    background: none;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    padding: 20px;
+    padding-left: 70px;
+    font-size: 16px;
+    outline: none;
+    color: #cccccc;
+}
+.pie_pagina .pie{
+    margin-top: 30px;
+    background: #2f2f2f;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 90px 0px 30px;
 }
 .blanco{
     position: fixed;

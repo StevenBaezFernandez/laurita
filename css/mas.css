@@ -52,6 +52,7 @@
 }
 .contacto{
     display: flex;
+    margin-bottom: 30px;
 }
 .txt_contacto{
     width: 35%;
