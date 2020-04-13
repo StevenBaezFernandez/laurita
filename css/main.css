@@ -668,9 +668,7 @@ body a{
   }
 
   #disqus_thread{
-      width: 90%;
+      width: 95%;
       margin: auto;
-      display: block;
-      border: 1px solid green;
   }
   
