@@ -666,4 +666,8 @@ body a{
       height: 32px;
     }
   }
+
+  #disqus_thread{
+      width: 90%;
+  }
   

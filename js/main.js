@@ -27,7 +27,7 @@ window.addEventListener("load", ()=>{
         if(info_container){
             info_container.classList.add("active");
         }
-    }, 2000);
+    }, 100);
     
 });
 
