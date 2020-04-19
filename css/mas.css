@@ -209,3 +209,80 @@
     font-weight: bold;
     text-shadow: 1px 2px 2px rgba(0,0,0,.15);
 }
+.idea .info h2{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.sobre_nosotros_body > h2{
+    font-family: 'Montserrat';
+    color: #0c8044;
+    text-shadow: 1px 3px 3px rgba(0,0,0,.3);
+    text-align: center;
+    margin: 60px 0px;
+    font-size: 38px;
+}
+.que_es{
+    background-image: url(../img/home-bg-2.jpg);
+    background-size: cover;
+}
+.idea,
+.que_es{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 70px 0px;
+
+}
+.idea > img,
+.que_es > img{
+    width: 50%;
+    padding: 10px;
+}
+.idea .info,
+.que_es .info{
+    width: 50%;
+    padding: 20px;
+}
+.idea .info h2,
+.que_es .info h2,
+.valores h2{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3.5em;
+    color: #777777;
+    font-weight: normal;
+    text-align: left;
+    margin: 20px 0px;
+}
+.idea .info p,
+.que_es .info p,
+.valores p{
+    color: #999999;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.valores{
+    background: #eaeaea;
+    width: 100%;
+    padding: 20px;
+}
+.valores h2{
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.valores ul{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+.valores ul li{
+    color: #777777;
+    line-height: 30px;
+}
+.valores p{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
