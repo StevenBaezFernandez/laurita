@@ -14,17 +14,17 @@
     <header class="header-father">
         <div class="header1">
             <div class="left">
-                <i class="fa fa-bars btn-menu"></i>
+                <i class="fa fa-bars btn-menu" id="btn_show_movil"></i>
                 <h1>¡Puedes tener un pelo natural y sin quimicos!</h1>
             </div>
             
 
             <div class="menu_social">
                 <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus"></i>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
                 </div>
                 
 
@@ -39,7 +39,7 @@
                 <img src="img/logo.png" alt="logotipo">
             </a>
             
-            <ul class="menu">
+            <ul class="menu principal">
                 <li><a href="" class="activo enlace_inicio">INICIO</a></li>
                 <li class=" activo enlace_produsctos"><a href="productos.html">PRODUCTOS</a></li>
                 <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" >SOBRE NOSOTROS</a></li>
@@ -53,24 +53,34 @@
                     </ul>
                 </li>
             </ul>
-            <a href="contacto.html"><button class="btn-main">CONTACTO</button></a>
+            <a href="contacto.html"><button role="button" class="btn-main">CONTACTO</button></a>
             
         </div>
     </header>
     <div class="menu_scroll">
-        <ul class="menu">
+        <ul class="menu scroll">
             <li><a href="" class="activo enlace_inicio">INICIO</a></li>
             <li class=" activo enlace_produsctos"><a href="productos.html">PRODUCTOS</a></li>
             <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" >SOBRE NOSOTROS</a></li>
             <li class="enlace_galeria"><a href="galeria.html">GALERIA</a></li>
-            <li><a href="">MÁS <i class="fas fa-angle-down"></i></a>
-                <ul class="submenu">
-                    <li><a href="" class="mas_galeria">Galeria</a></li>
-                    <li><a href="" class="mas_sobre_nosotros">sobre nosotros</a></li>
-                    <li><a href="" class="mas_productos">productos</a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </li>
+            <li class="enlace_galeria"><a href="contacto.html">CONTACTO</a></li>
+            
+        </ul>
+    </div>
+    <div class="menu_movil">
+        <div class="header_menu_movil">
+            <h3>Menu</h3>
+            <button id="btn_hide_movil" role="button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <ul class="menu movil">
+            <li><a href="" class="activo enlace_inicio"><span class="icon_movil fa fa-home"></span> INICIO</a></li>
+            <li class=" activo enlace_produsctos"><a href="productos.html"><span class="icon_movil fa fa-box"></span> PRODUCTOS</a></li>
+            <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" ><span class="icon_movil fa fa-users"></span> SOBRE NOSOTROS</a></li>
+            <li class="enlace_galeria"><a href="galeria.html"><span class="icon_movil fa fa-image"></span> GALERIA</a></li>
+            <li class="enlace_galeria"><a href="contacto.html"><span class="icon_movil fa fa-envelope"></span> CONTACTO</a></li>
+            
         </ul>
     </div>
     <div class="panel_busqueda">
@@ -91,19 +101,19 @@
             <img src="img/natural.png" class="info_img1" alt="natural">
             <h2>100% Natural</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit asperiores quaerat</p>
-            <button>Más información</button>
+            <button role="button">Más información</button>
         </div>
         <div class="sec">
             <img src="img/pelo_fuerte.png" class="info_img2" alt="pelo fuerte">
             <h2>Pelo fuerte</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit asperiores quaerat</p>
-            <button>Más información</button>
+            <button role="button">Más información</button>
         </div>
         <div class="sec">
             <img src="img/buen_producto.png" class="info_img3" alt="buen producto">
             <h2>Buena calidad</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit asperiores quaerat</p>
-            <button>Más información</button>
+            <button role="button">Más información</button>
         </div>
     </div>
     <div class="info2">
@@ -118,7 +128,7 @@
                 explicabo est assumenda, quae incidunt ut illum rerum accusantium maiores enim veritatis! Esse tenetur dolor 
                 perferendis
             </p>
-            <button>MÁS INFORMACIÓN</button>
+            <button role="button">MÁS INFORMACIÓN</button>
         </div>
     </div>
 
@@ -131,7 +141,7 @@
                 explicabo est assumenda, quae incidunt ut illum rerum accusantium maiores enim veritatis! Esse tenetur dolor 
                 perferendis
             </p>
-            <button>MÁS INFORMACIÓN</button>
+            <button role="button">MÁS INFORMACIÓN</button>
         </div>
         <div class="section_img">
             <img src="img/undraw_jewelry_iima.svg" alt="" class="fashion2">
@@ -145,7 +155,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolore inventore reiciendis
                 ex iusto, quos dolores debitis aperiam in quibusdam.
             </p>
-            <button class="mas_info">Más Información</button>
+            <button role="button" class="mas_info">Más Información</button>
         </div>
         
     </div>
@@ -155,6 +165,22 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aut!</p>
 
         <img src="img/52793496_405460826682569_1324813940243517189_n.jpg" alt="" class="foto_laura">
+    </div>
+
+
+    <div class="overlay">
+        <div class="main_newsletter">
+            <div class="header_news">
+                <h3>Suscribete</h3>
+                <p>¡Para estar al tanto de todos nuestros productos!</p>
+            </div>
+            <div class="body_news">
+                <form action="">
+                    <input type="text" name="correo_electonico" placeholder="Correo electronico">
+                    <input type="submit" value="Suscribirse" role="button">
+                </form>
+            </div>
+        </div>
     </div>
 
 
@@ -191,7 +217,7 @@
         <p class="cargando">Cargando la página</p>
     </div>
 
-    <button class="btn_ir_arriba"><i class="fas fa-angle-up"></i></button>
+    <button role="button" class="btn_ir_arriba"><i class="fas fa-angle-up"></i></button>
 
     <footer class="pie_pagina">
         <div class="cuerpo">
@@ -205,23 +231,29 @@
                         <input type="text" placeholder="Digita tu correo">
                     </div>
                 </div>
-                <button>Suscribete</button>
+                <button role="button">Suscribete</button>
             </div>
             
             <div class="contenedor_social">
                 <ul>                
                     
                     <li>
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Facebook</span>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
                     </li>
                     <li>
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
                     </li>
                     <li>
-                        <i class="fab fa-twitter"></i>
-                        <span>Tiwtter</span>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            <span>Tiwtter</span>
+                        </a>
                     </li>
                     <li>
                         <i class="fas fa-phone-alt"></i>

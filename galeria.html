@@ -14,17 +14,17 @@
     <header class="header-father">
         <div class="header1">
             <div class="left">
-                <i class="fa fa-bars btn-menu"></i>
+                <i class="fa fa-bars btn-menu" id="btn_show_movil"></i>
                 <h1>¡Puedes tener un pelo natural y sin quimicos!</h1>
             </div>
             
 
             <div class="menu_social">
                 <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus"></i>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
                 </div>
                 
 
@@ -39,7 +39,7 @@
                 <img src="img/logo.png" alt="logotipo">
             </a>
             
-            <ul class="menu">
+            <ul class="menu principal">
                 <li><a href="index.html" class="enlace_inicio">INICIO</a></li>
                 <li class="enlace_produsctos"><a href="productos.html">PRODUCTOS</a></li>
                 <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" >SOBRE NOSOTROS</a></li>
@@ -58,19 +58,29 @@
         </div>
     </header>
     <div class="menu_scroll">
-        <ul class="menu">
-            <li><a href="" class=" enlace_inicio">INICIO</a></li>
-            <li class=" activo enlace_produsctos"><a href="productos.html">PRODUCTOS</a></li>
+        <ul class="menu scroll">
+            <li><a href="index.html" class="enlace_inicio">INICIO</a></li>
+            <li class=" activo enlace_produsctos"><a href="productos.html" class="activo">PRODUCTOS</a></li>
             <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" >SOBRE NOSOTROS</a></li>
-            <li class="enlace_galeria"><a class="activo" href="galeria.html">GALERIA</a></li>
-            <li><a href="">MÁS</a>
-                <ul class="submenu">
-                    <li><a href="" class="mas_galeria">Galeria</a></li>
-                    <li><a href="" class="mas_sobre_nosotros">sobre nosotros</a></li>
-                    <li><a href="" class="mas_productos">productos</a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </li>
+            <li class="enlace_galeria"><a href="galeria.html">GALERIA</a></li>
+            <li class="enlace_galeria"><a href="contacto.html">CONTACTO</a></li>
+            
+        </ul>
+    </div>
+    <div class="menu_movil">
+        <div class="header_menu_movil">
+            <h3>Menu</h3>
+            <button id="btn_hide_movil" role="button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <ul class="menu movil">
+            <li><a href="index.html" class="enlace_inicio"><span class="icon_movil fa fa-home"></span> INICIO</a></li>
+            <li class=" activo enlace_produsctos"><a href="productos.html" ><span class="icon_movil fa fa-box"></span> PRODUCTOS</a></li>
+            <li class="enlace_sobre_nosotros"><a href="sobre_nosotros.html" ><span class="icon_movil fa fa-users"></span> SOBRE NOSOTROS</a></li>
+            <li class="enlace_galeria"><a href="galeria.html" class="activo"><span class="icon_movil fa fa-image"></span> GALERIA</a></li>
+            <li class="enlace_galeria"><a href="contacto.html"><span class="icon_movil fa fa-envelope"></span> CONTACTO</a></li>
+            
         </ul>
     </div>
     <div class="panel_busqueda">

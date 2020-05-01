@@ -54,6 +54,9 @@ body a{
     display: flex;
     align-items: center;
 }
+.header1 .menu_social a{
+    color: #fff;
+}
 .header1 .menu_social i:hover{
     color: #0c8044;
     transition: all .3s ease;
@@ -140,6 +143,9 @@ body a{
 .menu{
     list-style: none;
     float: right;
+}
+.menu_movil{
+    display: none;
 }
 .menu > li{
     display: inline-block;
@@ -277,7 +283,8 @@ body a{
 .info3 .section_info button,
 .enviar_contacto,
 .info4 button,
-.pie_pagina .cuerpo .newsletter button{
+.pie_pagina .cuerpo .newsletter button,
+.overlay .main_newsletter .body_news input[type="submit"]{
     padding: 18px 25px;
     font-size: 16px;
     background: none;
@@ -294,7 +301,8 @@ body a{
 .info2 .section_info button:hover,
 .info3 .section_info button:hover,
 .enviar_contacto:hover,
-.info4 button:hover{
+.info4 button:hover,
+.overlay .main_newsletter .body_news input[type="submit"]:hover{
     background: #0c8044;
     border: 1px solid #0c8044;
     color: #ffffff;
@@ -564,6 +572,13 @@ body a{
 .info5 img.active{
     transform: rotateY(180deg);
 }
+
+
+.img_construc{
+    max-width: 100%;
+}
+
+
 .pie_pagina{
     background: #333333;
     color: #cccccc;
@@ -582,6 +597,13 @@ body a{
 .pie_pagina .cuerpo > div:nth-child(2) ul li{
     margin: 10px;
 }
+.pie_pagina .cuerpo > div:nth-child(2) ul li a{
+    color: #eaeaea;
+    transition: all .3s ease;
+}
+.pie_pagina .cuerpo > div:nth-child(2) ul li a:hover{
+    color: #0c8044;
+}
 .pie_pagina .cuerpo .newsletter{
     padding: 20px 0px;
     text-align: center;
@@ -596,8 +618,10 @@ body a{
     margin-bottom: 15px;
     position: relative;
     width: 40%;
-    min-width: 280px;
+    min-width: 240px;
+    max-width: 99%;
     margin: auto;
+    overflow: hidden;
 }
 .pie_pagina .cuerpo .news .input_group i{
     position: absolute;
@@ -620,7 +644,6 @@ body a{
 }
 .pie_pagina .cuerpo .news .input_group input{
     width: 100%;
-    min-width: 280px;
     background: none;
     border: 1px solid #777777;
     border-radius: 3px;
@@ -709,6 +732,114 @@ body a{
 .green{
     color: #0b6939;
 }
+/* -----------overlay newsletter------------- */
+.overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay.active{
+    animation: overlay .6s ease 0s forwards;
+}
+@keyframes overlay{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.overlay.active .main_newsletter{
+    background: #fff;
+    box-shadow: 1px 3px 8px rgba(0,0,0,.5);
+    border-radius: 4px;
+    width: 600px;
+    max-width: 98%;
+    padding: 15px;
+    background-image: url(../img/home-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 13px 0px;
+    animation: main_newsletter 1s ease 0s forwards;
+    transform: scale(.5);
+    opacity: 0;
+
+}
+@keyframes main_newsletter{
+    0%{
+        transform: scale(.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.overlay .main_newsletter .header_news{
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+   
+}
+.overlay .main_newsletter .header_news h3{
+    font-family: 'Libre Franklin',sans-serif;
+    font-size: 42px;
+    line-height: 50px;
+    color: #0b6939;
+    text-shadow: 1px 3px 5px rgba(0,0,0,0.1 );
+    animation: h3_news 2s ease .7s forwards;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+@keyframes h3_news{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+.overlay .main_newsletter .header_news p{
+    font-family: 'Libre Franklin',sans-serif;
+    color: #222222;
+
+}
+.overlay .main_newsletter .body_news{
+    padding: 15px;
+}
+.overlay .main_newsletter .body_news input[type="text"]{
+    display: block;
+    padding: 9px 3px;
+    margin: 10px auto;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    font-size: 20px;
+    outline: none;
+    transition: all .3s ease;
+}
+.overlay .main_newsletter .body_news input[type="text"]:focus{
+    border-bottom: 2px solid #08723b;
+}
+.overlay .main_newsletter .body_news input[type="submit"]{
+    margin-top: 20px;
+    padding: 18px 35px;
+}
 /* -----------preloader -------------*/
 .lds-facebook {
     display: inline-block;
@@ -748,6 +879,6 @@ body a{
   }
 
   #disqus_thread{
-      width: 95%;
+      width: 98%;
       margin: auto;
   }
